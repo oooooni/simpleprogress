@@ -13,7 +13,7 @@ func Simpleprogress(message string) chan<- string {
 		for {
 			select {
 			case <-ch:
-				fmt.Println("done")
+				fmt.Println("\rdone")
 				return
 			default:
 				fmt.Print("\r")
